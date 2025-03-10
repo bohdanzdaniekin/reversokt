@@ -1,4 +1,4 @@
-package io.github.mrnemo.reversokt.entity.data
+package io.github.mrnemo.reversokt.entity
 
 data class ContextPhrase(
     val phrase: String,

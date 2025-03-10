@@ -1,24 +1,27 @@
-package io.github.mrnemo.reversokt.entity
+package io.github.mrnemo.reversokt.entity.language
 
-object LanguageCompatibility {
+object Compatibility {
 
     val context = mapOf(
         Language.ENGLISH to setOf(
             Language.ARABIC,
             Language.GERMAN,
+            Language.ENGLISH,
             Language.SPANISH,
             Language.FRENCH,
             Language.HEBREW,
             Language.ITALIAN,
             Language.JAPANESE,
+            Language.KOREAN,
             Language.DUTCH,
             Language.POLISH,
             Language.PORTUGUESE,
             Language.ROMANIAN,
             Language.RUSSIAN,
-            Language.TURKISH,
-            Language.CHINESE,
             Language.SWEDISH,
+            Language.TURKISH,
+            Language.UKRAINIAN,
+            Language.CHINESE
         ),
         Language.ARABIC to setOf(
             Language.ENGLISH,
@@ -27,6 +30,7 @@ object LanguageCompatibility {
             Language.FRENCH,
             Language.HEBREW,
             Language.ITALIAN,
+            Language.KOREAN,
             Language.PORTUGUESE,
             Language.RUSSIAN,
             Language.TURKISH,
@@ -44,8 +48,8 @@ object LanguageCompatibility {
             Language.PORTUGUESE,
             Language.ROMANIAN,
             Language.RUSSIAN,
-            Language.TURKISH,
             Language.SWEDISH,
+            Language.TURKISH,
         ),
         Language.SPANISH to setOf(
             Language.ARABIC,
@@ -60,15 +64,16 @@ object LanguageCompatibility {
             Language.PORTUGUESE,
             Language.ROMANIAN,
             Language.RUSSIAN,
-            Language.TURKISH,
-            Language.CHINESE,
             Language.SWEDISH,
+            Language.TURKISH,
+            Language.UKRAINIAN,
+            Language.CHINESE,
         ),
         Language.FRENCH to setOf(
             Language.ARABIC,
             Language.GERMAN,
-            Language.SPANISH,
             Language.ENGLISH,
+            Language.SPANISH,
             Language.HEBREW,
             Language.ITALIAN,
             Language.JAPANESE,
@@ -77,16 +82,17 @@ object LanguageCompatibility {
             Language.PORTUGUESE,
             Language.ROMANIAN,
             Language.RUSSIAN,
-            Language.TURKISH,
-            Language.CHINESE,
             Language.SWEDISH,
+            Language.TURKISH,
+            Language.UKRAINIAN,
+            Language.CHINESE,
         ),
         Language.HEBREW to setOf(
             Language.ARABIC,
             Language.GERMAN,
+            Language.ENGLISH,
             Language.SPANISH,
             Language.FRENCH,
-            Language.ENGLISH,
             Language.ITALIAN,
             Language.DUTCH,
             Language.PORTUGUESE,
@@ -95,28 +101,31 @@ object LanguageCompatibility {
         Language.ITALIAN to setOf(
             Language.ARABIC,
             Language.GERMAN,
+            Language.ENGLISH,
             Language.SPANISH,
             Language.FRENCH,
             Language.HEBREW,
-            Language.ENGLISH,
             Language.JAPANESE,
             Language.DUTCH,
             Language.POLISH,
             Language.PORTUGUESE,
             Language.ROMANIAN,
             Language.RUSSIAN,
-            Language.TURKISH,
-            Language.CHINESE,
             Language.SWEDISH,
+            Language.TURKISH,
+            Language.UKRAINIAN,
         ),
         Language.JAPANESE to setOf(
             Language.GERMAN,
+            Language.ENGLISH,
             Language.SPANISH,
             Language.FRENCH,
             Language.ITALIAN,
-            Language.ENGLISH,
             Language.PORTUGUESE,
             Language.RUSSIAN,
+        ),
+        Language.KOREAN to setOf(
+            Language.ENGLISH
         ),
         Language.DUTCH to setOf(
             Language.GERMAN,
@@ -167,16 +176,19 @@ object LanguageCompatibility {
             Language.DUTCH,
             Language.PORTUGUESE,
             Language.ENGLISH,
+            Language.TURKISH,
+            Language.UKRAINIAN
         ),
         Language.TURKISH to setOf(
             Language.ARABIC,
             Language.GERMAN,
+            Language.ENGLISH,
             Language.SPANISH,
             Language.FRENCH,
             Language.ITALIAN,
             Language.PORTUGUESE,
             Language.ROMANIAN,
-            Language.ENGLISH,
+            Language.RUSSIAN
         ),
         Language.CHINESE to setOf(
             Language.ENGLISH,
@@ -189,7 +201,14 @@ object LanguageCompatibility {
             Language.SPANISH,
             Language.FRENCH,
             Language.ITALIAN,
-        )
+        ),
+        Language.UKRAINIAN to setOf(
+            Language.ENGLISH,
+            Language.SPANISH,
+            Language.FRENCH,
+            Language.ITALIAN,
+            Language.RUSSIAN,
+        ),
     )
 
     val translation = mapOf(

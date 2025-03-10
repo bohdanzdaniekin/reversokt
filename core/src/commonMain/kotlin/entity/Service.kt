@@ -1,4 +1,7 @@
-package io.github.mrnemo.reversokt
+package io.github.mrnemo.reversokt.entity
+
+import io.github.mrnemo.reversokt.entity.language.Availability
+import io.github.mrnemo.reversokt.entity.language.Language
 
 enum class Service {
     CONTEXT,
@@ -7,3 +10,6 @@ enum class Service {
     TRANSLATION,
     CONJUGATION,
 }
+
+val Service.available: Set<Language>
+    get() = Availability.forService(this)
